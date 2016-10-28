@@ -3,7 +3,7 @@ description: "put the description here"
 signature: "a signature line which probably doesn't make sense for this site"
 pygments: true
 permalink: pretty
-markdown: kramdown
+markdown: redcarpet
 github:
   # enables "edit" link
   repo: 'activate/activate.github.io'
