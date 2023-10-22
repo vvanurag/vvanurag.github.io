@@ -370,7 +370,7 @@ input:checked + .theme-switch-text{
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   /* bottom: 0px;
   right: 0px; */
   /* background: url("../videos/wall.mp4") top center;
@@ -383,7 +383,7 @@ input:checked + .theme-switch-text{
   background: var(--home-bg-tint-color);
   position: absolute;
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   top: 0;
   left: 0;
   bottom: 0;
@@ -401,7 +401,7 @@ input:checked + .theme-switch-text{
   bottom: 0;
   right: 0; 
   /* width: 100%; */
-  min-height: 100vh;
+  min-height: 50vh;
   overflow-x: hidden;
   overflow-y: auto;
   background: rgb(255, 255, 255);
