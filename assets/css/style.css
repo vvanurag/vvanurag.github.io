@@ -398,7 +398,7 @@ input:checked + .theme-switch-text{
   position: relative;
   /* top: 0; */
   /* left: 0; */
-  bottom: 0;
+  bottom: 50;
   right: 0; 
   /* width: 100%; */
   min-height: 50vh;
