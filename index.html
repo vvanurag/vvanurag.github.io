@@ -59,8 +59,8 @@
     <div class="d-flex flex-column">
 
       <div class="profile">        
-        <img src="assets/img/decent.jpeg" alt="Anurag V V">
-        <h1 class="text-light"><a href="index.html" alt="Anurag V V  - University of Maryland">Anurag V V</a></h1>
+        <img src="assets/img/me2.jpeg" alt="Anurag V V">
+        <!--<h1 class="text-light"><a href="index.html" alt="Anurag V V  - University of Maryland">Anurag V V</a></h1>-->
         <div class="social-links mt-3 text-center">
           <a href="https://www.linkedin.com/in/Anuragvv/" rel="noopener noreferrer" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
           <a href="https://github.com/vvAnurag" rel="noopener noreferrer" target="_blank" class="github"><i class="bx bxl-github"></i></a>
@@ -138,7 +138,7 @@
     <div class="hero-container" data-aos="fade-in">
       <h1>Anurag Visagakoti</h1>
       <div class="cen">
-        <p> Roboticist  </p>
+        <p> Robotics & Computer Vision Research  </p>
       </div>
       <body>
  
@@ -161,27 +161,36 @@
     <section id="about" class="about">
       <div class="container" >
 
-        <div class="section-title">
-          <h2>About Me</h2>
-          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-        </div>
-
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
             <img style="height:500px;max-width:240px;width: expression(this.width > 500 ? 240: true);" src="assets/img/me4_3.jpeg" class="img-fluid" alt="Anurag Visagakoti">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Perception - Planning - Control</h3>
+            <!--<h3>Perception - Planning - Control</h3>-->
             <p align="justify">
               
               <br>
               <br>
-              Currently, I am joint member of Perception and Robotics Group (PRG) and Perception and Autonomous Robotics Group (PeAR), advised by Prof. Yiannis Aloimonos and Prof. Nitin J. Sanket. 
-              Prior to pursing my Masters, I was Research Associate at Swaayatt Robots working on integration of visual and lidar odometry. 
+              <div class="section-title">
+                <h3>About Me</h3>
+              </div>
+                <p>
+                With a Bachelor's in Mechanical Engineering followed by 2 Masters', I have a multi-disciplinary
+                involvement with Robotics. Starting with multibody-dynamics analysis, planning and control of space manipulators,
+                my areas of interest evolved from dymanics and control to simultaneous localization and mapping (SLAM), 3D reconstruction and is currently delving into
+                perception and autonomy. I also strive to apply deep learning in solving each of the aforementioned problems. 
+                Please check my projects below and leave me a note at <a herf>sdf</a> if they interest you.
+                </p>
+                <p>I bear strong foundation in geometry and linear algebra as basis of my understanding and demystifying these fields.
+                  I am also excited to completely phathom the scope of learning paradigms</p>
               <br>
-  
+
+              <div class="section-title">
+                <h3>Current work</h3>
+              </div>
               <br>
-              In my spare time I like to travel, paint and read psychology books!
+              I am currently working with Neural Implicit Scene Radiance Fields(NeRF) applied to SLAM.
+            </br>
             </p>
           </div>
         </div>
@@ -190,13 +199,12 @@
     </section><!-- End About Section -->
 
     <!-- ===========================   Copied Portfolio Section  =============================   -->
-    
       <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>Projects</h2>
           <p>The following screeshots are several projects that i have taken and also that i able to share to people. So if you want to know the specific thing about the project that i have taken, please contact me.</p>
         </div>
 
@@ -204,8 +212,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-mbd">Multi-body Dynamics</li>
               <li data-filter=".filter-cv">Computer Vision</li>
-              <li data-filter=".filter-aerial">Aerial Robotics</li>
+              <li data-filter=".filter-slam">SLAM</li>
               <li data-filter=".filter-planning">Path Planning</li>
             </ul>
           </div>

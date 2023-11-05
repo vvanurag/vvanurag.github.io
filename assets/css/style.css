@@ -413,7 +413,6 @@ input:checked + .theme-switch-text{
   filter: brightness(90%);
 }
 
-
 #hero .hero-container {
   position: relative;
   z-index: 10;
@@ -537,7 +536,7 @@ input:checked + .theme-switch-text{
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 30px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
@@ -546,14 +545,14 @@ section {
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 1px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 2px;
+  padding-bottom: 10px;
   position: relative;
   color: var(--section-heading-color);
 }
