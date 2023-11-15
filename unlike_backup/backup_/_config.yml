@@ -1,0 +1,14 @@
+name: "Activate Hub"
+description: "put the description here"
+signature: "a signature line which probably doesn't make sense for this site"
+pygments: true
+permalink: pretty
+markdown: kramdown
+github:
+  # enables "edit" link
+  repo: 'activate/activate.github.io'
+  branch: master
+prose:
+  siteurl: 'http://activate.github.io'
+  relativeLinks: 'http://activate.github.io/links.jsonp'
+  media: 'media'
