@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently working as Senior Data Scientist at Capgemini Engineering working in the field of Life Sciences. I do research and help client companies in building data-driven solutions. I am currently focussing on use of quantum computing and machine learning to accelerate the developments in energy (battery material discovery) and aerospace sector.
+THis is edited. I am currently working as Senior Data Scientist at Capgemini Engineering working in the field of Life Sciences. I do research and help client companies in building data-driven solutions. I am currently focussing on use of quantum computing and machine learning to accelerate the developments in energy (battery material discovery) and aerospace sector.
 
 Previously I worked as a Data Scientist and Scientific Software Developer at the [Image and Data Analysis Facility](https://www.dzne.de/en/research/core-facilities/image-and-data-analysisfacility) at German Center for Neurodegenerative Diseases (DZNE).
 At DZNE, I used state of the art computer vision and machine learning tools to understand the factors leading to neurodegenerative diseases. We collaborated with several large pharmaseuticals for testing ex-vivo models for drug development.
