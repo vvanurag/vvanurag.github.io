@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<style>
+			div.onepage {
+			margin:0 auto;
+			width:1000px;
+			background-color:rgb(240,250,250);
+			color:black;
+			padding:20px;
+			}
+
+			table.index {
+			width:750px;
+			margin:auto;
+			text-align:center;
+			border:0;
+			border-collapse:collapse;
+			}
+			
+			a.index {
+			font-family:Arial, Helvetica, sans-serif;
+			color:rgb(120,40,090);
+			text-decoration:none;
+			}
+			a.norm {
+			color:rgb(120,40,090);
+			text-decoration:none;
+			}
+			
+			
+			body {
+				font-family:'Candara';
+				background-color:white;
+				  }
+			h1   {color:red;}
+		</style> 
+		
+		<title>V. V. Anurag</title>
+	</head>
+
+	
+	
+	<body align="center">
+		<h1 style="font-family:arial"> V V Anurag </h1>
+		<em>vv.anurag[at]research.iiit.ac.in, anuragpbox[at]gmail.com</em>
+		<we>
+		<br>
+		<br>
+		<table class="index" align="center" border="0">
+			<tr>
+				<td><a href="#" class="index">Home</a></td>
+				<td><a href="Research.html" class="index">Research</a></td>
+				<td><a href="Publications.html" class="index">Publications</a></td>
+				<td><a href="Academics.html" class="index">Acedamics</a></td>
+				<td><a href="Resume_of_Anurag_VV.pdf" class="index" style="color:red">Download CV</a></td>
+			</tr>
+		</table>		
+		<!--<address style="text-align:center">
+			Room.No 361,<br>
+			NBH, IIIT-Hyderabad, Gachibowli,<br>
+			Hyderabad, Telangana.<br>
+			500032.<br>
+		</address>-->
+		<hr>
+		<!--<div align="center" style="margin:auto;width:600px;background-color:grey">
+		asdasd
+		</div>
+		-->
+		<div class="onepage" align="left">
+				<table border="0">
+					<td>
+						<img src="images/istan.jpg" alt="This is my pic" height="70%">
+					</td>
+					<td style="padding:60px;padding-bottom:00px">
+						<!--<h3 style="font-family:courier;color:red;width:900px">About me</h3>	-->
+						I am a Masters Research student at <a href="http://robotics.iiit.ac.in/" class="norm" style="color:blue">
+						Robotics Research Center</a> in <a href="http://robotics.iiit.ac.in/" class="norm" style="color:blue">IIIT-Hyderabad</a> under the guidance of 
+						<a href="http://surilshah.weebly.com/" class="norm" style="color:blue">Dr.Suril V.Shah</a> and
+						<a href="http://faculty.iiit.ac.in/~mkrishna/" class="norm" style="color:blue">Dr.K Madhava Krishna</a>.
+						I have a backing of B.Tech degree in Mechanigal Engineering from VIT, vellore. 
+						<br>
+						<br>	
+						My inspiration comes from amazing abilities displayed by the biological systems of nature.
+						I aspire to bring robotic systems on par with biological counterparts in terms of perception, movement and control.
+						<br>
+						I am eager to explore the following research topics
+						<ul>
+							<li>Dynamic locomotion and manipulation</li>
+							<li>Optimization for control and motion planning of robots</li>
+							<li>Learning applied bridging perception and control</li>
+						</ul>
+					</td>
+				</table>
+		</div>
+		
+		<div class="onepage">
+				<h2 style="font-family:courier;color:rgb(160,40,090);text-align:left">Research Projects</h2>	
+				<p title="About me" style="text-align:left">Research in IIIT-Hyderabad has helped me dive into the field of robotics giving me a good sense of the contemporary problems prevailing in the field.
+															I worked on the following projects
+															</p>
+				<table border='1' align="center" style="text-align:left">
+				<tr>
+					<td style="padding:20px;padding-bottom:00px;">					
+						<h3> Floating Base Dual Arm Manipulator(MS Thesis)</h3>
+				 		<p>The setup is a redundant dual arm manipulator mounted on a floating base satellite with camera at end of each arm for visual feedback. With the task of 
+						visual servoing to a target, we could</p>
+						<ul>
+							<li>Perform Generalized Jacobian Matrix based control.
+							<li>Use redundancy and task priority formulation to perform reactionless visual servoing.
+							<li>Device a sampling based kinodynamic path planning algorithm for reactionless visual servoing.
+						</ul>
+						<a href="Research.html">More details here</a>
+					</td>
+					<td align="center"><img src="dual_arm.png" alt="This is my pic" width="70%"></td>
+					
+				</tr>
+				
+				<tr>
+					<td style="padding:20px;padding-bottom:00px;"> 
+						<h3> Modular Setp Climbing Robot</h3>
+				 		<p>A fully actuated multi-module robot traversing on uneven terrain. Conversely, an attempt was made to
+						design a multi-module system having actuators only at alternate link joints. Design of control schemes
+						and optimization of the design parameters contribute to the increased performance of the traversal of
+						uneven terrain.</p>
+						<a href="Research.html">More details here</a>
+					</td>
+					<td align="center"><img src="step_climber.png" alt="This is my pic" width="70%" align="center"></td>
+					
+				</tr>
+				
+				</table>
+						
+			
+		</div>
+	</body>
+
+
+
+
+
+</html>
