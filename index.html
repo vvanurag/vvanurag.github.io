@@ -1,433 +1,314 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anurag Viswanadha Visagakoti</title>
+<meta name="description" content="Anurag Viswanadha Visagakoti builds systems that perceive, reason and act: robotics (SLAM, neural 3D maps, control) and AI (RAG and multi-agent orchestration).">
+<meta property="og:title" content="Anurag Viswanadha Visagakoti">
+<meta property="og:description" content="Robotics engineer building retrieval pipelines and multi-agent systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vvanurag.github.io/">
+<meta property="og:image" content="https://vvanurag.github.io/images/me4_3.jpeg">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;family=Source+Sans+3:wght@400;600&amp;family=Source+Code+Pro:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="assets/site/site.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
 
-        <title>Anurag Viswanadha Visagakoti</title>
-        
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+<!-- Shared SVG definitions for the architecture diagrams -->
+<svg class="dg dg-defs" aria-hidden="true" focusable="false">
+<defs>
+<pattern id="d-dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" class="d-dot"></circle></pattern>
+<marker id="d-arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="d-fa"></path></marker>
+<marker id="d-arrow2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="d-fa2"></path></marker>
+</defs>
+</svg>
 
-        <!--==== CSS ====-->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/magnific-popup.css" rel="stylesheet">
-        <link href="css/animate.min.css" rel="stylesheet">
+<main class="page">
 
-                <!-- Vendor CSS Files 
-                <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-                <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-                <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-                <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-                <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-                <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-                -->
+<header class="bio" id="top">
+<div class="bio-text">
+<h1>Anurag Viswanadha Visagakoti</h1>
+<p>I build systems that perceive, reason and act. For most of my career that meant robots: SLAM for indoor drones at TCS Innovation Labs, visual servoing for space manipulators at IIIT Hyderabad, and neural 3D scene representations for navigation at Arizona State University.</p>
+<p>Now I work on retrieval-augmented generation and multi-agent orchestration: systems that search a large pool of data and turn it into decisions someone can trust.</p>
+<div class="bio-links">
+<span class="email">anuragpbox@gmail.com</span>
+<a href="cv/cv.pdf">CV</a>
+<a href="https://github.com/vvanurag">GitHub</a>
+<a href="https://www.linkedin.com/in/anurag-viswanadha-visagakoti/">LinkedIn</a>
+<a href="https://scholar.google.co.in/citations?user=nvZtwIoAAAAJ&amp;hl=en">Google Scholar</a>
+</div>
+</div>
+<img class="portrait" src="images/me4_3.jpeg" width="946" height="2048" alt="Full-length portrait of Anurag">
+</header>
 
-        
+<section class="section cases" aria-labelledby="ai-heading">
+<div class="section-head"><h2 class="label label--ai" id="ai-heading">Agents and retrieval</h2></div>
 
-        <!--==== CUSTOM CSS ====-->
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/style2.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet">
-          <!-- Template Main CSS File -->
-        <link href="assets/css/style.css" rel="stylesheet">
+<article class="case">
+<figure class="case-fig">
+<div class="frame">
+<svg class="dg" viewBox="0 0 640 360" role="img" aria-label="TFS Agent architecture inside a zero-egress boundary: work items are pruned, ChromaDB retrieval is filtered by clearance, Llama 3 drafts, and a validate and correct loop runs before the report">
+<rect width="640" height="360" class="d-bg"></rect>
+<rect width="640" height="360" fill="url(#d-dots)"></rect>
+<rect x="16" y="46" width="608" height="298" rx="16" class="d-bound"></rect>
+<text x="32" y="34" class="d-cap d-ca2">ZERO-EGRESS BOUNDARY</text>
+<g transform="translate(572,8)"><path d="M10 26 H38 A7 7 0 0 0 36 12 A10 10 0 0 0 17 9 A8 8 0 0 0 10 26 Z" class="d-thin"></path><line x1="8" y1="4" x2="42" y2="30" class="d-strike"></line></g>
+<text x="562" y="30" class="d-ts d-end">no cloud LLM calls</text>
+<rect x="52" y="146" width="76" height="54" rx="6" class="d-node"></rect>
+<rect x="46" y="152" width="76" height="54" rx="6" class="d-node"></rect>
+<rect x="40" y="158" width="76" height="54" rx="6" class="d-node"></rect>
+<line x1="50" y1="174" x2="96" y2="174" class="d-thin"></line>
+<line x1="50" y1="184" x2="106" y2="184" class="d-thin"></line>
+<line x1="50" y1="194" x2="84" y2="194" class="d-thin"></line>
+<text x="78" y="232" class="d-t d-mid">work items</text>
+<text x="78" y="248" class="d-ts d-mid">Azure DevOps</text>
+<path d="M118,185 L144,185" class="d-edge"></path>
+<rect x="150" y="162" width="84" height="46" rx="10" class="d-node"></rect>
+<text x="192" y="182" class="d-t d-mid">prune</text>
+<text x="192" y="198" class="d-ts d-mid">Pydantic v2</text>
+<path d="M158,262 V298 A34,9 0 0 0 226,298 V262" class="d-node"></path>
+<ellipse cx="192" cy="262" rx="34" ry="9" class="d-node"></ellipse>
+<path d="M158,280 A34,9 0 0 0 226,280" class="d-thin"></path>
+<text x="192" y="328" class="d-t d-mid">ChromaDB</text>
+<rect x="52" y="268" width="92" height="24" rx="12" class="d-hot"></rect>
+<text x="98" y="284" class="d-ts d-mid d-ca">RBAC ≤ L2</text>
+<line x1="144" y1="280" x2="158" y2="280" class="d-thin"></line>
+<rect x="258" y="78" width="262" height="238" rx="14" class="d-frame"></rect>
+<text x="272" y="100" class="d-cap">LANGGRAPH</text>
+<rect x="276" y="112" width="100" height="44" rx="10" class="d-node"></rect>
+<text x="326" y="131" class="d-t d-mid">retrieve</text>
+<text x="326" y="147" class="d-ts d-mid">RAG context</text>
+<rect x="276" y="180" width="100" height="46" rx="10" class="d-node"></rect>
+<text x="326" y="200" class="d-t d-mid">draft</text>
+<text x="326" y="216" class="d-ts d-mid">Llama 3</text>
+<rect x="404" y="180" width="100" height="46" rx="10" class="d-hot"></rect>
+<text x="454" y="200" class="d-t d-mid">validate</text>
+<text x="454" y="216" class="d-ts d-mid">schema</text>
+<rect x="340" y="258" width="100" height="40" rx="10" class="d-hot2"></rect>
+<text x="390" y="276" class="d-t d-mid">correct</text>
+<text x="390" y="290" class="d-ts d-mid">re-prompt</text>
+<text x="390" y="246" class="d-ts d-mid d-ca2">retries &lt; 3</text>
+<path d="M234,185 C254,185 252,203 270,203" class="d-edge"></path>
+<path d="M226,268 C250,268 246,134 270,134" class="d-edge"></path>
+<path d="M326,156 L326,174" class="d-edge"></path>
+<path d="M376,203 L398,203" class="d-edge"></path>
+<path d="M454,226 C454,268 452,278 446,278" class="d-edge2"></path>
+<path d="M340,278 C322,278 326,250 326,232" class="d-edge2"></path>
+<path d="M504,203 L542,203" class="d-edge"></path>
+<path d="M548,168 H586 L602,184 V238 H548 Z" class="d-node"></path>
+<path d="M586,168 V184 H602" class="d-thin"></path>
+<line x1="556" y1="198" x2="592" y2="198" class="d-thin"></line>
+<line x1="556" y1="208" x2="592" y2="208" class="d-thin"></line>
+<line x1="556" y1="218" x2="580" y2="218" class="d-thin"></line>
+<circle cx="600" cy="236" r="11" class="d-fa"></circle>
+<path d="M594.5,236 L598.5,240 L605.5,231.5" class="d-check"></path>
+<text x="575" y="264" class="d-t d-mid">report</text>
+<text x="575" y="280" class="d-ts d-mid">valid JSON</text>
+</svg>
+</div>
+<figcaption>Figure 1. TFS Agent pipeline. Everything inside the dotted line runs on-prem.</figcaption>
+</figure>
+<div class="case-body">
+<div class="eyebrow">Agents &amp; RAG · Nirvana Health</div>
+<h3>TFS Agent</h3>
+<p class="lede">Sprint reports from Azure DevOps, written by agents that never send a byte off the network.</p>
+<ol class="steps">
+<li><span class="step-n">1</span><span><b>Ingest.</b> A two-stage client pulls work items and prunes them to typed summaries.</span></li>
+<li><span class="step-n">2</span><span><b>Retrieve.</b> ChromaDB search filters by the requester's clearance level inside the query.</span></li>
+<li><span class="step-n">3</span><span><b>Draft and verify.</b> Local Llama 3 drafts the report, and a LangGraph loop re-prompts until it passes the schema.</span></li>
+</ol>
+<div class="chips"><span class="chip">LangGraph</span><span class="chip">Llama 3 · Ollama</span><span class="chip">ChromaDB</span><span class="chip">FastAPI</span><span class="chip">Pydantic v2</span></div>
+<div class="actions">
+<a class="btn btn--primary" href="https://vvanurag.github.io/tfs_agent/">Interactive walkthrough →</a>
+<a class="btn" href="https://github.com/vvanurag/tfs_agent">Code →</a>
+</div>
+</div>
+</article>
 
+<article class="case case--flip">
+<figure class="case-fig">
+<div class="frame">
+<svg class="dg" viewBox="0 0 640 360" role="img" aria-label="Olexa voice loop: the Cardputer streams push-to-talk audio to a server that runs speech-to-text, an agent loop with tools and memory, and text-to-speech, then streams the reply back">
+<rect width="640" height="360" class="d-bg"></rect>
+<rect width="640" height="360" fill="url(#d-dots)"></rect>
+<text x="110" y="80" class="d-cap d-mid d-ca2">PUSH-TO-TALK</text>
+<text x="110" y="100" class="d-t d-mid">Cardputer · ESP32</text>
+<rect x="32" y="112" width="156" height="124" rx="14" class="d-hot2"></rect>
+<rect x="44" y="124" width="132" height="54" rx="5" class="d-screen"></rect>
+<text x="54" y="140" class="d-ts d-ca2">● LISTENING</text>
+<rect x="56" y="157" width="5" height="10" rx="2" class="d-bar" style="animation-delay: 0s"></rect>
+<rect x="65" y="153" width="5" height="18" rx="2" class="d-bar" style="animation-delay: -0.1s"></rect>
+<rect x="74" y="149" width="5" height="26" rx="2" class="d-bar" style="animation-delay: -0.2s"></rect>
+<rect x="83" y="155" width="5" height="14" rx="2" class="d-bar" style="animation-delay: -0.3s"></rect>
+<rect x="92" y="151" width="5" height="22" rx="2" class="d-bar" style="animation-delay: -0.4s"></rect>
+<rect x="101" y="147" width="5" height="30" rx="2" class="d-bar" style="animation-delay: -0.5s"></rect>
+<rect x="110" y="154" width="5" height="16" rx="2" class="d-bar" style="animation-delay: -0.6s"></rect>
+<rect x="119" y="150" width="5" height="24" rx="2" class="d-bar" style="animation-delay: -0.7s"></rect>
+<rect x="128" y="156" width="5" height="12" rx="2" class="d-bar" style="animation-delay: -0.15s"></rect>
+<rect x="137" y="152" width="5" height="20" rx="2" class="d-bar" style="animation-delay: -0.25s"></rect>
+<rect x="146" y="148" width="5" height="28" rx="2" class="d-bar" style="animation-delay: -0.35s"></rect>
+<rect x="155" y="155" width="5" height="14" rx="2" class="d-bar" style="animation-delay: -0.45s"></rect>
+<rect x="164" y="158" width="5" height="8" rx="2" class="d-bar" style="animation-delay: -0.55s"></rect>
+<rect x="44" y="188" width="11" height="10" rx="2" class="d-key"></rect><rect x="58.5" y="188" width="11" height="10" rx="2" class="d-key"></rect><rect x="73" y="188" width="11" height="10" rx="2" class="d-key"></rect><rect x="87.5" y="188" width="11" height="10" rx="2" class="d-key"></rect><rect x="102" y="188" width="11" height="10" rx="2" class="d-key"></rect><rect x="116.5" y="188" width="11" height="10" rx="2" class="d-key"></rect><rect x="131" y="188" width="11" height="10" rx="2" class="d-key"></rect><rect x="145.5" y="188" width="11" height="10" rx="2" class="d-key"></rect><rect x="160" y="188" width="11" height="10" rx="2" class="d-key"></rect>
+<rect x="44" y="202" width="11" height="10" rx="2" class="d-key"></rect><rect x="58.5" y="202" width="11" height="10" rx="2" class="d-key"></rect><rect x="73" y="202" width="11" height="10" rx="2" class="d-key"></rect><rect x="87.5" y="202" width="11" height="10" rx="2" class="d-key"></rect><rect x="102" y="202" width="11" height="10" rx="2" class="d-key"></rect><rect x="116.5" y="202" width="11" height="10" rx="2" class="d-key"></rect><rect x="131" y="202" width="11" height="10" rx="2" class="d-key"></rect><rect x="145.5" y="202" width="11" height="10" rx="2" class="d-key"></rect><rect x="160" y="202" width="11" height="10" rx="2" class="d-key"></rect>
+<rect x="44" y="216" width="11" height="10" rx="2" class="d-key"></rect><rect x="58.5" y="216" width="11" height="10" rx="2" class="d-key"></rect><rect x="73" y="216" width="11" height="10" rx="2" class="d-key"></rect><rect x="87.5" y="216" width="11" height="10" rx="2" class="d-key"></rect><rect x="102" y="216" width="11" height="10" rx="2" class="d-key"></rect><rect x="116.5" y="216" width="11" height="10" rx="2" class="d-key"></rect><rect x="131" y="216" width="11" height="10" rx="2" class="d-key"></rect><rect x="145.5" y="216" width="11" height="10" rx="2" class="d-key"></rect><rect x="160" y="216" width="11" height="10" rx="2" class="d-key"></rect>
+<rect x="226" y="60" width="398" height="236" rx="14" class="d-frame"></rect>
+<text x="240" y="82" class="d-cap">VOICE SERVER</text>
+<path d="M190,150 L242,150" class="d-edge2"></path>
+<text x="216" y="140" class="d-ts d-mid d-ca2">PCM</text>
+<rect x="248" y="128" width="82" height="44" rx="10" class="d-node"></rect>
+<text x="289" y="147" class="d-t d-mid">STT</text>
+<text x="289" y="162" class="d-ts d-mid">Whisper</text>
+<path d="M330,150 L356,150" class="d-edge"></path>
+<rect x="362" y="106" width="120" height="88" rx="12" class="d-hot"></rect>
+<text x="422" y="138" class="d-t d-mid">agent loop</text>
+<text x="422" y="156" class="d-ts d-mid">LLM + tools</text>
+<text x="422" y="174" class="d-ts d-mid d-ca">memory · history</text>
+<path d="M482,150 L508,150" class="d-edge"></path>
+<rect x="514" y="128" width="82" height="44" rx="10" class="d-node"></rect>
+<text x="555" y="147" class="d-t d-mid">TTS</text>
+<text x="555" y="162" class="d-ts d-mid">MP3 stream</text>
+<path d="M422,194 C422,208 372,208 372,222" class="d-thin"></path>
+<path d="M422,194 C422,208 432,208 432,222" class="d-thin"></path>
+<path d="M422,194 C422,208 486,208 486,222" class="d-thin"></path>
+<rect x="340" y="222" width="64" height="24" rx="12" class="d-node"></rect><text x="372" y="238" class="d-ts d-mid">calendar</text>
+<rect x="410" y="222" width="44" height="24" rx="12" class="d-node"></rect><text x="432" y="238" class="d-ts d-mid">time</text>
+<rect x="460" y="222" width="52" height="24" rx="12" class="d-node"></rect><text x="486" y="238" class="d-ts d-mid">notes</text>
+<text x="426" y="268" class="d-cap d-mid">TOOLS</text>
+<path d="M482,178 C530,178 570,190 570,210" class="d-edge"></path>
+<path d="M540,224 V256 A30,8 0 0 0 600,256 V224" class="d-node"></path>
+<ellipse cx="570" cy="224" rx="30" ry="8" class="d-node"></ellipse>
+<text x="570" y="282" class="d-ts d-mid">pgvector</text>
+<path d="M596,150 C616,150 616,318 588,318 L150,318 C118,318 110,300 110,244" class="d-edge2"></path>
+<text x="380" y="342" class="d-ts d-mid d-ca2">spoken reply streams back to the device</text>
+</svg>
+</div>
+<figcaption>Figure 2. Olexa voice loop, from button press to spoken answer.</figcaption>
+</figure>
+<div class="case-body">
+<div class="eyebrow">Voice agent · Team project, co-builder</div>
+<h3>Olexa</h3>
+<p class="lede">Hold a button on a pocket-sized ESP32, ask a question, and hear the answer a moment later.</p>
+<ol class="steps">
+<li><span class="step-n step-n--robo">1</span><span><b>Capture.</b> The Cardputer streams 16 kHz push-to-talk audio over a WebSocket.</span></li>
+<li><span class="step-n">2</span><span><b>Reason.</b> The server transcribes it and runs a tool-using agent with memory.</span></li>
+<li><span class="step-n step-n--robo">3</span><span><b>Respond.</b> Text-to-speech streams the reply back to the device speaker.</span></li>
+</ol>
+<div class="chips"><span class="chip">TypeScript</span><span class="chip">WebSockets</span><span class="chip">ESP32 · PlatformIO</span><span class="chip">Supabase pgvector</span><span class="chip">Braintrust evals</span></div>
+</div>
+</article>
+</section>
 
-        <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-        
-        
-      <!--==== DEMO COLOR PANEL ===-->
-      <div class="demo_panel_box">
-          <div class="color_panel_box">
-             <div class="spiner_button slide_in_out"><i class="fa fa-cog fa-spin"></i></div>
-              <span class="red_color"></span>
-              <span class="blue_color"></span>
-              <span class="yellow_color"></span>
-              <span class="purple_color"></span>
-              <span class="pink_color"></span>
-              <span class="green_color"></span>
-          </div>
-      </div>
-      <!--==== DEMO COLOR PANEL ===-->
+<section class="section" aria-labelledby="robo-heading">
+<div class="section-head section-head--split">
+<h2 class="label label--robo" id="robo-heading">Robotics and 3D vision</h2>
+<div class="filters" role="group" aria-label="Filter robotics projects">
+<button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
+<button type="button" class="filter" data-filter="vision" aria-pressed="false">3D Vision &amp; SLAM</button>
+<button type="button" class="filter" data-filter="control" aria-pressed="false">Planning &amp; Control</button>
+</div>
+</div>
+<div class="grid">
 
-        <!--===== Preloader ====-->
-        <div class="preloader">
-            <div class="spinner"></div>
-        </div>
+<article class="card" data-cats="vision control">
+<div class="card-media"><img src="assets/img/nerf_navigation.gif" alt="Robot path planned through a NeRF scene" loading="lazy" decoding="async"><span class="card-chip">3D vision</span></div>
+<div class="card-body">
+<div class="meta">ASU Active Perception Group</div>
+<h3>NeRF-based navigation</h3>
+<p>A navigation planner that plans directly in a neural radiance field of the scene.</p>
+<div class="chips"><span class="chip">NeRF</span><span class="chip">Planning</span></div>
+</div>
+</article>
 
+<article class="card" data-cats="vision">
+<div class="card-media"><img src="assets/img/gaussian_splats.gif" alt="Gaussian splat reconstruction of a scene" loading="lazy" decoding="async"><span class="card-chip">3D vision</span></div>
+<div class="card-body">
+<div class="meta">ASU Active Perception Group</div>
+<h3>Gaussian splatting for SLAM</h3>
+<p>Bringing Gaussian splatting into the SLAM and 3D reconstruction pipeline.</p>
+<div class="chips"><span class="chip">3D Gaussians</span><span class="chip">SLAM</span></div>
+</div>
+</article>
 
-        <div id="home"></div>
-         <!--=====************** INTRO SECTION **************=====-->
-        <div class="intro-section" id="intro-bg1">
+<article class="card" data-cats="vision">
+<div class="card-media"><img src="assets/img/orbslam_gif_cropped.gif" alt="ORB-SLAM map built from a drone camera" loading="lazy" decoding="async"><span class="card-chip">SLAM</span></div>
+<div class="card-body">
+<div class="meta">TCS Innovation Labs · 2017–2020</div>
+<h3>Dense mapping for drone navigation</h3>
+<p>ORB-SLAM dense mapping and localization from a drone-mounted RealSense camera for retail-space navigation.</p>
+<div class="chips"><span class="chip">ORB-SLAM</span><span class="chip">ROS</span><span class="chip">RealSense</span></div>
+</div>
+</article>
 
-        <!--===== HEADER AREA =====-->
-            <header class="navbar custom-navbar navbar-fixed-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <div class="logo">
-                               <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <a href="#home">Anurag Visagakoti</a> <!--== logo ==-->
-                            </div>
-                        </div>
+<article class="card" data-cats="control">
+<div class="card-media"><img src="assets/img/Reactionless.gif" alt="Dual-arm space robot simulation" loading="lazy" decoding="async"><span class="card-chip">Control</span></div>
+<div class="card-body">
+<div class="meta">IIIT Hyderabad · ICRA 2014</div>
+<h3>Reactionless visual servoing</h3>
+<p>Visual servoing for a dual-arm space robot that leaves the floating base undisturbed.</p>
+<div class="chips"><span class="chip">Visual servoing</span><span class="chip">Dynamics</span></div>
+<div class="card-links"><a href="https://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/images/ConferencePapers/2014/Hafez2014Reactionless.pdf">Paper →</a><a href="https://robotics.iiit.ac.in/publications/2014/Hafez_Reactionless-Visual/">Project page →</a></div>
+</div>
+</article>
 
-                        <div class="col-md-10 col-sm-10 col-xs-12">
-                           <nav class="main-menu">
-                            <div class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav"> <!--== manin menu ==-->
-                                    <li class="smooth-scroll"><a class="theme-color" href="#about">About</a></li>
-                                    <li class="smooth-scroll"><a class="theme-color" href="#experience">Experience</a></li>
-                                    <li class="smooth-scroll"><a class="theme-color" href="#work">Publications</a></li>
-                                    <li class="smooth-scroll"><a class="theme-color" href="./cv/cv.pdf">CV</a></li>
-                                    <li class="smooth-scroll"><a class="theme-color" href="#travel">travel</a></li>
-                                </ul>
-                            </div>
-                            </nav>
-                        </div>
-                    </div><!--/.row-->
-                </div><!--/.container-->
-            </header>
-        <!--===== END HEADER AREA ======-->
+<article class="card" data-cats="control">
+<div class="card-media"><img src="assets/img/rrt_imagespace_cropped.gif" alt="RRT tree growing in image space" loading="lazy" decoding="async"><span class="card-chip">Planning</span></div>
+<div class="card-body">
+<div class="meta">IIIT Hyderabad · IROS 2016</div>
+<h3>Image-space path planning</h3>
+<p>RRT planning in image space for reactionless manipulation of a redundant space robot.</p>
+<div class="chips"><span class="chip">RRT</span><span class="chip">Space robotics</span></div>
+</div>
+</article>
 
+</div>
+</section>
 
+<section class="experience" aria-labelledby="exp-heading">
+<div class="experience-side">
+<div class="section-head"><h2 class="label" id="exp-heading">Experience</h2></div>
+<div class="legend">
+<span><span class="dot dot--ai"></span>agents &amp; AI</span>
+<span><span class="dot"></span>robotics &amp; 3D vision</span>
+</div>
+</div>
+<ol class="timeline">
+<li class="tl tl--ai"><div class="tl-when"></div><div class="tl-rail"></div><div class="tl-body"><div class="tl-role">AI Engineer</div><div class="tl-org">Nirvana Health</div><div class="tl-what">Local-LLM agent and RAG pipelines over internal engineering data.</div></div></li>
+<li class="tl tl--ai"><div class="tl-when">2026</div><div class="tl-rail"></div><div class="tl-body"><div class="tl-role">Co-builder</div><div class="tl-org">Olexa</div><div class="tl-what">Voice assistant: agent loop, streaming audio and ESP32 device client.</div></div></li>
+<li class="tl"><div class="tl-when">2022–2024</div><div class="tl-rail"></div><div class="tl-body"><div class="tl-role">M.S. Robotics &amp; Autonomous Systems</div><div class="tl-org">Arizona State University</div><div class="tl-what">NeRF-based navigation and GNSS-aided LIO-SAM mapping. 4.0 GPA.</div></div></li>
+<li class="tl"><div class="tl-when">2022</div><div class="tl-rail"></div><div class="tl-body"><div class="tl-role">Director of Engineering</div><div class="tl-org">Treadstone Media Labs</div><div class="tl-what">Deep-learning tools for sketch-to-3D model generation, deployed in containers.</div></div></li>
+<li class="tl"><div class="tl-when">2017–2020</div><div class="tl-rail"></div><div class="tl-body"><div class="tl-role">Systems Engineer / Researcher</div><div class="tl-org">TCS Innovation Labs</div><div class="tl-what">Drone-based retail automation: SLAM, motion-capture calibration, ROS navigation.</div></div></li>
+<li class="tl"><div class="tl-when">2016</div><div class="tl-rail"></div><div class="tl-body"><div class="tl-role">Mechanical Design Engineer</div><div class="tl-org">Asimov Robotics</div><div class="tl-what">Led a team of six building a humanoid service robot with LiDAR navigation.</div></div></li>
+<li class="tl"><div class="tl-when">2016</div><div class="tl-rail"></div><div class="tl-body"><div class="tl-role">M.S. Computer Science</div><div class="tl-org">IIIT Hyderabad</div><div class="tl-what">Space-robot manipulation research at the Robotics Research Center.</div></div></li>
+</ol>
+</section>
 
-        <!--======= WELCOME AREA =======-->
-            <div class="welcome-area" data-stellar-background-ratio="0.6">
-               <div class="welcome-table">
-                   <div class="welcome-cell">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="welcome-text">
-                                        <h1>Anurag Visagakoti</h1>
-                                    </div>
-                                </div>
-                           </div><!--/.row-->
-                        </div><!--/.container-->
-                    </div>
-                </div>
-            </div>
+<section class="section" aria-labelledby="pub-heading">
+<div class="section-head"><h2 class="label" id="pub-heading">Publications</h2></div>
+<ul class="pubs">
+<li><div class="pub-venue">IROS 2016</div><div class="pub-body"><div class="pub-title">Image space based path planning for reactionless manipulation of redundant space robot</div><div class="pub-authors">R. Bhargava, P. Mithun, <b>V. V. Anurag</b>, A. H. Abdul Hafez, S. V. Shah</div></div></li>
+<li><div class="pub-venue">ICAR 2015</div><div class="pub-body"><div class="pub-title">Switching method to avoid algorithmic singularity in vision-based control of a space robot</div><div class="pub-authors">S. V. Shah, <b>V. V. Anurag</b>, A. H. Abdul Hafez</div></div></li>
+<li><div class="pub-venue">ICRA 2014</div><div class="pub-body"><a class="pub-title" href="https://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/images/ConferencePapers/2014/Hafez2014Reactionless.pdf">Reactionless visual servoing of a multi-arm space robot combined with other manipulation tasks</a><div class="pub-authors">A. H. A. Hafez, P. Mithun, <b>V. V. Anurag</b>, S. V. Shah, K. M. Krishna</div></div></li>
+</ul>
+</section>
 
-        </div>
-        <!--=====************* END INTRO SECTION ***************=====-->
+<footer class="site-footer">
+<span class="email">anuragpbox@gmail.com</span>
+<nav aria-label="Profiles">
+<a href="https://github.com/vvanurag">GitHub</a>
+<a href="https://www.linkedin.com/in/anurag-viswanadha-visagakoti/">LinkedIn</a>
+<a href="https://scholar.google.co.in/citations?user=nvZtwIoAAAAJ&amp;hl=en">Google Scholar</a>
+<a href="cv/cv.pdf">CV</a>
+</nav>
+</footer>
 
-       
-        <!--=====************** ABOUT SECTION ***************=====-->
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                       <div class="author-image wow fadeInUp" data-wow-delay="0.4s" style="float: right;">
-                            <img style="height:250px;max-width:240px" src="images/me4_3.jpeg" alt="Author Image"> <!--=== author image ===-->
-                        </div>
-                    </div>
+</main>
 
-                    <div class="col-md-8">
-                       <div class="about-text wow fadeInUp" data-wow-delay="0.6s">
-                            <h3>Anurag V V</h3>
-                             <p>
-							<div>Robotics Researcher</div>
-							<div>Double Masters: ASU, IIIT-Hyderabad</div>
-							<div>Email:&nbsp;</td><td>vvisagak [at] asu (dot) edu,  anuragpbox [at] gmail (dot) com</div>
-						<p/>
-                            <p></p>
-                            <a class="scroll-btn btn extra" href="cv/cv.pdf"><i class="fa fa-download"></i> Resume</a>
-                            <a class="scroll-btn btn extra" href="https://scholar.google.co.in/citations?user=nvZtwIoAAAAJ&hl=en">Google Scholar</a>
-                            <a class="scroll-btn btn extra" href="https://github.com/vvanurag">Github</a>
-                            <a class="scroll-btn btn extra" href="https://github.com/vvanurag">Blog</a>
-                        </div>
-                    </div>
-
-                </div><!--/.row-->
-                
-
-                <p><b>Areas of Interest</b></p>
-                <p>My area of expertise spans Simultaneous Localisation and Mapping (SLAM), Photogrammetry,
-                    3D Representation, Manipulators, Visual servoing, deep learning applications in robotics.
-                    Most of my projects have been successful only in collaboration with amazing researchers and professors.
-                    Check out the awsome projects and you can reach out to me for any collaboration at my email above.  </p>
-                <p> </p>
-                <p><b>About me</b></p>
-                <p>I hold two masters in field of robotics and autonomous systems. My 8+ years of industrial experience came from
-                    working with some highly successful robotics startups in India along side working on some ground breaking projects at
-                    TCS Innovation Labs, Kolkata. Masters thesis culminated in reserach papers published in ICRA and IROS among other
-                    international conferences. Work at ASU under Active perception lab along with Chi Yao (PhD) and Prof. Yezhou Yang on 
-                    Implecit representation of 3D maps has been invaluible research experience.
-                    </p>
-
-                
-                <p><b>.....Site Under Construction. Please use 'All' tab to see all projects.....</b></p>
-
-
-            </div><!--/.container-->
-        </section>
-        <!--=====*********** END ABOUT SECTION **************=====-->
-
-
-    <!-- ======= Researchfolio Section ======= -->
-    <section id="projects" class="portfolio section-bg">
-        <div id="div1" class="container">
-                    <div id = "experience" class="section-title">
-                            <h2>Experience</h2>
-                    </div>
-        
-                    <ul id="portfolio-flters">
-                            <li data-filter-group="group1" data-target="researchset" data-filter="*" class="filter-active">All</li>
-                            <li data-filter-group="group1" data-target="researchset" data-filter=".filter-slam1">SLAM</li>
-                            <li data-filter-group="group1" data-target="researchset" data-filter=".filter-mbd1">Multi-body Dynamics</li>
-                            <li data-filter-group="group1" data-target="researchset" data-filter=".filter-cv1">Computer Vision</li>
-                            <li data-filter-group="group1" data-target="researchset" data-filter=".filter-planning1">Path Planning</li>
-                    </ul>
-                    
-                    <div class="portfolio-container" data-aos="fade-up" data-aos-delay="100">
-                                <div data-filter-set="researchset" class="portfolio-item filter-slam1 filter-mbd1 filter-cv1 filter-planning1">
-                                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="col-md-12 col-sm-12">
-                                            <a href="">
-                                                <img src="assets/img/line.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-12 col-sm-12">
-                                            <h3>Publications</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div data-filter-set="researchset" class="portfolio-item group1 filter-mbd1 filter-active1" >
-                                        <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                            <div class="col-md-4 col-sm-4">
-                                                <a href="">
-                                                    <img src="assets/img/Reactionless.gif" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="col-md-8 col-sm-8">
-                                            <p>
-                                                <br />
-                                                <b>  Reactionless visual servoing of a multi-arm space robot combined with other manipulation tasks</b> <br />
-                                                AHA Hafez, P Mithun, <b>VV Anurag</b>, SV Shah, KM Krishna.
-                                                    In International Conference on Robotics and Automation <b>(ICRA) 2014</b><br />
-                                                        <b><a href="https://cdn.iiit.ac.in/cdn/cvit.iiit.ac.in/images/ConferencePapers/2014/Hafez2014Reactionless.pdf">[PDF]</a> <a href="https://robotics.iiit.ac.in/publications/2014/Hafez_Reactionless-Visual/">[Project Page]</a> </b>
-                                            </p>
-                                            </div>
-                                        </div>
-                                </div>
-
-
-                                <div data-filter-set="researchset" class="portfolio-item group1 filter-mbd1 filter-active1" >
-                                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="col-md-4 col-sm-4">
-                                            <a href="">
-                                                <img src="assets/img/rrt_imagespace_cropped.gif" alt="" class="bezel-free">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4">
-                                            <a href="">
-                                                <img src="assets/img/Vs_imagespace2.gif" alt="" object-fit="cover">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4">
-                                        <p>
-                                            <b>  Image Space based Path Planning for Reactionless Manipulation of Redundant Space Robot</b> <br />
-                                            <b>V. V. Anurag</b> Rachit Bhargava    P. Mithun   A.H. Abdul Hafez    S. V. Shah   .
-                                                In International Conference on Robotics and Automation <b>(IROS) 2015</b><br />
-                                                <b><a href="https://cdn.iiit.ac.in/cdn/robotics.iiit.ac.in/uploads/Main/Publications/Rachit_etal_IROS_16.pdf">[PDF]</a> <a href="https://vvanurag.github.io/reactionless_visualservoing/">[Project Page]</a> </b>
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>
-                        
-                              
-                              <div data-filter-set="researchset" class="portfolio-item filter-slam1 filter-mbd1 filter-cv1 filter-planning1">
-                                <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="col-md-12 col-sm-12">
-                                        <a href="">
-                                            <img src="assets/img/line.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12">
-                                        <h3>TCS Projects</h3>
-                                    </div> 
-                                </div>
-                              </div>
-
-
-                              <div data-filter-set="researchset" class="portfolio-item group1 filter-cv1 filter-active1" >
-                                <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="col-md-4 col-sm-4">
-                                        <a href="">
-                                            <img src="assets\img\orbslam_gif_cropped.gif" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8">
-                                    <p>
-                                        <br />
-                                        <b>ORB_SLAM based object detection for quadrotor indoor navigation</b> <br />
-                                        ORM_SLAM dense mapping and localization used for navigation of retail space emulations and for object detection.
-
-                                    </p>
-                                    </div>
-                                </div>
-                              </div>                              
-
-                              <div data-filter-set="researchset" class="portfolio-item group1 filter-cv1 filter-active1" >
-                                <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="col-md-4 col-sm-4">
-                                        <a href="">
-                                            <img src="assets\img\dfusmc_output.gif" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8">
-                                    <p>
-                                        <br />
-                                        <b>Dense 3D Reconstruction with smll motion of quadrotor (DfUSMC)</b> <br />
-
-                                    </p>
-                                    </div>
-                                </div>
-                              </div>
-
-                            
-                                <div data-filter-set="researchset" class="portfolio-item group1 filter-cv1 filter-active1" >
-                                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="col-md-4 col-sm-4">
-                                            <a href="">
-                                                <img src="assets/img/orbslam2line3dpp.gif" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-8 col-sm-8">
-                                        <p>
-                                            <br />
-                                            <b>  Line3Dpp from ORBSLAMPoint Cloud</b> <br/>
-                                            Employed Line3Dpp to extract lines from indoor scene for alignment in localization.
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>
-
-
-                                <div data-filter-set="researchset" class="portfolio-item group1 filter-cv1 filter-active1" >
-                                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="col-md-4 col-sm-4">
-                                            <a href="">
-                                                <img src="assets/img/drone_navigation.gif" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-8 col-sm-8">
-                                        <p>
-                                            <br />
-                                            <b>  Motion capture camera calibration</b> <br />
-                                            Calibrated motion capture setup and quadrotor camera in such a way that objects localised accurately 
-                                            in motion capture frame are also marked precisely in camera frame.
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div>               
-
-                                <div data-filter-set="researchset" class="portfolio-item filter-slam1 filter-mbd1 filter-cv1 filter-planning1">
-                                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="col-md-12 col-sm-12">
-                                            <a href="">
-                                                <img src="assets/img/line.png" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-12 col-sm-12">
-                                            <h3>ASU Projects</h3>
-                                        </div>
-                                    </div>
-                                </div>                                
-
-                                <div data-filter-set="researchset" class="portfolio-item group1 filter-cv1 filter-active1" >
-                                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="col-md-4 col-sm-4">
-                                            <a href="">
-                                                <img src="assets/img/nerf_navigation.gif" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-8 col-sm-8">
-                                        <p>
-                                            <br />
-                                            <b>  NeRF based navigation</b> <br />
-                                            NeRF based navigation: ongoing project. This projects implements navigation of a robot in a 3D scene represented
-                                            by a NeRF. 
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div> 
-
-                                <div data-filter-set="researchset" class="portfolio-item group1 filter-cv1 filter-active1" >
-                                    <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                                        <div class="col-md-4 col-sm-4">
-                                            <a href="">
-                                                <img src="assets/img/gaussian_splats.gif" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-8 col-sm-8">
-                                        <p>
-                                            <br />
-                                            <b>  Gaussian splatting</b> <br />
-                                            The new 3D representation is doing worders in 3D scene representation and view synthesis. 
-                                            Our efforts are to imcorporate it in SLAM/3D Reconstruction ecosystem.  
-                                        </p>
-                                    </div>
-                                    </div>
-                                </div> 
-
-       
-                </div>
-
-                    
-                        
-        </div>
-
-
-
-
-                    
-
-      </section>
-      <!-- End of Researchfolio Section -->
-
-
-    
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-        <!--===== JAVASCRIPT FILES =====-->
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/validator.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/magnific-popup-options.js"></script>
-        <script src="js/main.js"></script>
-            <script>showPubs(0);</script>
-    </body>
-    </html>
+<script src="assets/site/filter.js"></script>
+</body>
+</html>
